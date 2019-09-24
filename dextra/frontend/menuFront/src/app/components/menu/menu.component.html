@@ -1,0 +1,13 @@
+<div *ngIf="!loading">
+  <div *ngFor="let meal of getMenuItems()">
+    <div class="row">
+      <label class="mx-3 my-2" style="width: 10%">{{meal}}</label>
+      <button class="m-2" (click)="buyMeal(meal)">Pedir</button>
+    </div>
+    <div class="m-2 row">
+      <div>
+        <span class="m-2" *ngFor="let ingredient of getIngredient(meal)">{{ingredient}}</span>
+      </div>
+    </div>
+  </div>
+</div>
