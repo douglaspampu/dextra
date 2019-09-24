@@ -15,6 +15,6 @@ the backend will run on the address localhost:5000
 
 # Frontend
 the frontend will run at the address localhost:4200
-- cd frontend;
+- cd frontend/menuFront;
 - npm install
 - ng serve
